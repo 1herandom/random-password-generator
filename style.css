@@ -1,0 +1,165 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f4f4f9;
+  color: #333;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: #4CAF50;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+/* Password display input */
+.password-container input {
+  width: 300px;
+  max-width: 90%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background: #fff;
+  transition: border-color 0.3s;
+}
+
+.password-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Copy button */
+.buttons .copy {
+  background: #2196F3;
+  color: white;
+}
+
+.buttons .copy:hover {
+  background: #1e88e5;
+}
+
+/* Generate button */
+.buttons .redo {
+  background: #4CAF50;
+  color: white;
+}
+
+.buttons .redo:hover {
+  background: #45a049;
+}
+
+/* Slider container */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  max-width: 90%;
+}
+
+.slider-container label {
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+/* Slider */
+#passwordLength {
+  flex: 1;
+  height: 6px;
+  border-radius: 5px;
+  background: #ddd;
+  appearance: none;
+  cursor: pointer;
+}
+
+#passwordLength::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4CAF50;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#passwordLength::-webkit-slider-thumb:hover {
+  background: #45a049;
+}
+
+#passwordLength::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4CAF50;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#passwordLength::-moz-range-thumb:hover {
+  background: #45a049;
+}
+
+/* Slider value */
+#lengthValue {
+  min-width: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+  color: #666;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
+}

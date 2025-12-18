@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Password Generator</h1>
+  </header>
+
+  <main>
+    <!-- Password display -->
+    <div class="password-container">
+      <input type="text" id="password" readonly placeholder="Your password will appear here">
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="copy" id="copyBtn">Copy</button>
+      <button class="redo" id="redoBtn">Generate</button>
+    </div>
+
+    <!-- Password length slider -->
+    <div class="slider-container">
+      <label for="passwordLength">Password Length: <span id="lengthValue">12</span></label>
+      <input type="range" id="passwordLength" min="8" max="32" value="12">
+    </div>
+  </main>
+
+  <footer>
+    <p>Made BY : Rijan Adhikari </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
